@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+     <body>
+     <referenceContainer name="footer" remove="true"/>
+    <referenceContainer name="header" remove="true"/>
+        <referenceContainer name="content">
+            <block class="Vortexiq\Connect\Block\Adminhtml\Index\Index"
+                name="index_index"
+                template="Vortexiq_Connect::index/index.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

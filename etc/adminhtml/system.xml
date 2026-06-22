@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd"
+>
+    <system>
+        <tab id="vortexiq" translate="label" sortOrder="10" class="commerce">
+            <label>VORTEXIQ EXTENSIONS</label>
+        </tab>
+        <section id="vortexiq_connect_tab" translate="label" type="text"
+            sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>VortexIQ Connect Configuration</label>
+            <tab>vortexiq</tab>
+            <resource>Vortexiq_Connect::connect_configuration</resource>
+            <group id="connect_setting" translate="label" type="text"
+            sortOrder="20" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>VortexIQ Connect Setting</label>
+                <field id="connect_active" translate="label comment" type="select"
+                sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+    <frontend_model>Vortexiq\Connect\Block\Adminhtml\System\Config\Form\Field\Disable</frontend_model>
+                    <validate>required-entry</validate>
+                    <comment><![CDATA[ ]]></comment>
+                </field>
+            </group>
+        </section>
+        <section id="payment">
+            <!-- payment-group -->
+        </section>
+        <section id="carriers" translate="label" type="text"
+        sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <!-- carrier-group -->
+        </section>
+    </system>
+</config>

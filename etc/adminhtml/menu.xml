@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<config
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd"
+>
+    <menu>
+        <add id="Vortexiq_Connect::vortexiq_indexindex" title="VortexIQ"
+        module="Vortexiq_Connect"
+        sortOrder="20"
+        dependsOnModule="Vortexiq_Connect"
+        action="vortexiqconnect/index/index"
+        resource="Vortexiq_Connect::vortexiq_indexindex"/>
+<!--AddMenu-->
+    </menu>
+</config>
